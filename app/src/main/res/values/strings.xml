@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">JOGAS</string>
+    <string name="name_user">David Brendi</string>
+    <string name="deskripsi_user">kesulitan mengerjakan tugas ?</string>
+    <string name="label">Username</string>
+    <string name="password">Password</string>
+    <string name="deskripsi1">Kami siap mengerjakan tugas anda disini akan lebih mudah \n untuk bertemu penjoki dan bisa mendapatkan informasi \n rating penjoki</string>
+</resources>

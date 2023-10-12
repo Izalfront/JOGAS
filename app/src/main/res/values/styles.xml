@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="CustomShapeAppearance">
+        <item name="cornerFamily">rounded</item> <!-- Ini mengatur corner family menjadi rounded -->
+        <item name="cornerSize">30sp</item> <!-- Ini mengatur ukuran corner -->
+    </style>
+</resources>
