@@ -85,17 +85,18 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
     <!--   card content asisten     -->
+
+
     <GridLayout
         android:id="@+id/grid_content"
-        android:layout_width="150dp"
+        android:layout_width="wrap_content"
         android:layout_height="180dp"
         android:layout_gravity="center"
         android:columnCount="5"
         android:rowCount="5"
-        android:elevation="2dp"
         android:layout_marginRight="20dp"
         android:layout_marginTop="80dp"
-        android:layout_marginEnd="180dp"
+        android:layout_marginEnd="18dp"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/judul_asisten"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -107,12 +108,13 @@
             android:layout_height="180dp">
         <ImageButton
             android:id="@+id/content_asisten1"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_width="150dp"
+            android:layout_height="180dp"
             android:layout_row="0"
             android:layout_rowSpan="1"
             android:layout_column="0"
             android:layout_columnSpan="1"
+            android:clickable="true"
             android:background="@drawable/contentstyle"
             android:contentDescription="joki_content"
             app:layout_constraintStart_toStartOf="parent"
@@ -123,21 +125,26 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="70dp"
+                android:layout_marginTop="24dp"
                 android:text="Lisa R"
                 android:textColor="@color/white"
                 android:textSize="20dp"
                 android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent" />
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
             <ImageView
                 android:id="@+id/image_joki"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
+                android:layout_marginTop="16dp"
                 android:background="@drawable/user"
-                app:layout_constraintEnd_toStartOf="@+id/name_joki"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent" />
+                app:layout_constraintEnd_toStartOf="@+id/name_joki"
+                app:layout_constraintHorizontal_bias="0.51"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
                 android:id="@+id/jurusan_joki"
@@ -155,6 +162,7 @@
                 />
 
             <TextView
+                android:id="@+id/dokumen_user"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="32 Dokumen Tugas"
@@ -167,16 +175,84 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="@+id/jurusan_joki"/>
         </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TableRow
+            android:layout_width="171dp"
+            android:layout_height="match_parent"
+            android:layout_row="0"
+            android:layout_column="0" />
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="150dp"
+            android:layout_height="180dp">
         <ImageButton
             android:id="@+id/content_asisten2"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_width="150dp"
+            android:layout_height="180dp"
             android:layout_row="0"
             android:layout_rowSpan="1"
             android:layout_column="1"
             android:layout_columnSpan="1"
             android:background="@drawable/contentstyle"
-            android:contentDescription="joki_content2" />
+            android:clickable="true"
+            android:contentDescription="joki_content2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+            <TextView
+                android:id="@+id/name_joki2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="70dp"
+                android:layout_marginTop="24dp"
+                android:text="Lisa R"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/image_joki2"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/user"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/name_joki2"
+                app:layout_constraintHorizontal_bias="0.51"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/jurusan_joki2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Matematika"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                android:layout_marginEnd="24dp"
+                android:textColor="@color/white"
+                android:layout_marginTop="40dp"
+                app:layout_constraintTop_toBottomOf="@id/image_joki2"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                />
+
+            <TextView
+                android:id="@+id/dokumen_user2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="32 Dokumen Tugas"
+                android:textColor="@color/white"
+                android:layout_marginTop="25dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="24dp"
+                android:textSize="12sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/jurusan_joki2"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
     </GridLayout>
 
     <TextView
@@ -288,4 +364,5 @@
         </androidx.constraintlayout.widget.ConstraintLayout>
 
     </androidx.cardview.widget.CardView>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
