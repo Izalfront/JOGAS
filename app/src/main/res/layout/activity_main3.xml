@@ -78,6 +78,7 @@
         android:text="Asisten"
         android:textSize="24sp"
         android:textStyle="bold"
+        android:textColor="@color/black"
         android:layout_marginRight="230sp"
         android:layout_marginBottom="170sp"
         app:layout_constraintBottom_toBottomOf="parent"
